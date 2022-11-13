@@ -1,8 +1,12 @@
-ZSHRC_PATH = ~/.dotfiles2.0/zsh/.zshrc
+DOTFILES_PATH = ~/.dotfiles2.0/
 
 symlinks:
-	echo $(ZSHRC_PATH)
-	ln -sf $(ZSHRC_PATH) ~/.zshrc
+	# ZSH stuff
+	ln -sf $(DOTFILES_PATH)/zsh/.zshrc ~/.zshrc
+	ln -sf $(DOTFILES_PATH)/zsh/.zsh_plugins.txt ~/.zsh_plugins.txt
+	
+	# Alacritty
+	ln -sfn $(DOTFILES_PATH)/alacritty ~/.config/alacritty
 
 conda_show:
 	conda config --set changeps1 true

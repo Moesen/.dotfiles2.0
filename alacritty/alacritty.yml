@@ -1,0 +1,34 @@
+import:
+  - ~/.config/alacritty/colors.yml
+
+window:
+  history: 10000
+  padding:
+    x: 2
+    y: 2
+  dynamic_padding: true
+  decorations: full
+  
+  cursor:
+    style:
+      shape: block
+      blinking: on
+  
+  env: xterm-256color
+
+  live_config_reload: true
+
+font:
+  normal:
+    family: "Fira Mono"
+
+  bold: 
+    family: "Fira Mono"
+
+  italic: 
+    family: "Fira Mono"
+
+  bold_italic: 
+    family: "Fira Mono"
+
+  size: 17
