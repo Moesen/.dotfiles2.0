@@ -13,9 +13,9 @@ COMPLETION_WAITING_DOTS="true"
 HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=true # Import colorsceheme from 'wal' asyncronously
 
 # Installing starship if not already installed
-# if ! type "$starship" > /dev/null; then
-#	curl -sS https://starship.rs/install.sh | sh
-# fi
+if [ ! -f /usr/local/bin/starship ]; then
+      curl -sS https://starship.rs/install.sh | sh
+fi
 
 # Starship used for custom prompt
 eval "$(starship init zsh)"
@@ -36,6 +36,8 @@ bindkey '^[[B' history-substring-search-down
 
 # ZSH_AUTOSUGGEST_STRATEGY=(completion history)
 bindkey '^[\t' autosuggest-accept
+
+bindkey '^[l' snippet-expand
 
 export EDITOR="nvim"
 
