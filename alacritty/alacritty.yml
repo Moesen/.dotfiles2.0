@@ -20,15 +20,15 @@ window:
 
 font:
   normal:
-    family: "Fira Mono"
+    family: "SauceCodePro NFM"
 
   bold: 
-    family: "Fira Mono"
+    family: "SauceCodePro NFM"
 
   italic: 
-    family: "Fira Mono"
+    family: "SauceCodePro NFM"
 
   bold_italic: 
-    family: "Fira Mono"
+    family: "SauceCodePro NFM"
 
   size: 17

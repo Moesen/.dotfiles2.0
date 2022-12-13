@@ -1,12 +1,19 @@
 DOTFILES_PATH = ~/.dotfiles2.0/
 
 symlinks:
-	# ZSH stuff
-	ln -sf $(DOTFILES_PATH)/zsh/.zshrc ~/.zshrc
-	ln -sf $(DOTFILES_PATH)/zsh/.zsh_plugins.txt ~/.zsh_plugins.txt
+	@# ZSH stuff
+	@ln -sf $(DOTFILES_PATH)/zsh/.zshrc ~/.zshrc
+	@ln -sf $(DOTFILES_PATH)/zsh/.zsh_plugins.txt ~/.zsh_plugins.txt
 	
-	# Alacritty
-	ln -sfn $(DOTFILES_PATH)/alacritty ~/.config/alacritty
+	@# Alacritty
+	@ln -sfn $(DOTFILES_PATH)/alacritty ~/.config/alacritty
+	
+	@# Nvim
+	@ln -sfn $(DOTFILES_PATH)/nvim ~/.config/nvim
+	
+	@# Starship
+	@ln -sf $(DOTFILES_PATH)/starship/starship.toml ~/.config/starship.toml
+	
 
 conda_show:
 	conda config --set changeps1 true

@@ -1,0 +1,27 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = false
+
+format = """
+$git_branch
+$username$directory 
+"""
+
+[python]
+python_binary="python3"
+
+[username]
+style_root="bold orange"
+style_user="italic yellow"
+show_always=true
+
+[directory]
+truncation_length=2
+truncate_to_repo=true
+truncation_symbol="𐦘 "
+format="[$path]($style)[$read_only]($read_only_style)"
+style="green"
+read_only="𐦉"
+read_only_style="red"
+repo_root_style="cyan"
+repo_root_format="[$before_root_path](style)[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style)"
